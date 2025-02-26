@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Gestión Culto Joven</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi sitio web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Sección principal</h2>
-            <p>Este es el contenido principal de mi página web.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2023 Mi Página Web</p>
-    </footer>
+    <h1>Gestión Culto Joven</h1>
+    <div id="asignaciones">
+        </div>
+    <form id="formulario-asignacion">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="parte">Parte:</label>
+        <select id="parte" required>
+            <option value="Dirigir">Dirigir</option>
+            <option value="Juegos">Juegos</option>
+            <option value="Tema Central">Tema Central</option>
+            <option value="Despedida de Sábado">Despedida de Sábado</option>
+        </select>
+        <button type="submit">Asignar</button>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
